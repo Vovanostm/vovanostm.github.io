@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        font: 300 1.2rem/1.2 Arial, sans-serif;
+      }
+      .main-header {
+        height: 350px;
+        text-align: center;
+      }
+      .ovf-header {
+        padding: 10px 0;
+        height: 100%;
+        background: gray url("") 50% / cover;
+      }
+      .site-name {
+        color: white;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .section-name {
+        text-align: center;
+      }
+      .main-nav {
+        display: flex;
+        justify-content: center;
+      }
+      .nav-link {
+        width: 200px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background: black;
+        display: inline-block;
+        margin: 10px;
+      }
+      li {
+        display: block;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .card {
+        width: 300px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+        margin: 10px;
+      }
+      .card-header {
+        text-align: center;
+      }
+      .card-img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+      }
+      .card-text {
+        font-size: 1rem;
+        padding: 10px;
+      }
+      .main-footer {
+        padding: 30px;
+        text-align: center;
+        background: black;
+        color: white;
+      }
+      section {
+        margin: 40px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="ovf-header">
+        <h1 class="site-name">Название сайта</h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a class="nav-link" href="#">Главная</a></li>
+            <li><a class="nav-link" href="#about">О нас</a></li>
+            <li><a class="nav-link" href="#">Продукты</a></li>
+            <li><a class="nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h2 class="section-name">О нас</h2>
+        <div class="container">
+          <article class="card">
+            <img class="card-img" src="img/img1.jpg" alt="" />
+            <header>
+              <h3 class="card-header">Название</h3>
+            </header>
+            <p class="card-text">Мы работаем усердно</p>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="img/img2.jpg" alt="" />
+            <header>
+              <h3 class="card-header">Название</h3>
+            </header>
+            <p class="card-text">Мы работаем качественно</p>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="img/img3.jpg" alt="" />
+            <header>
+              <h3 class="card-header">Название</h3>
+            </header>
+            <p class="card-text">Мы работаем быстро</p>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="img/img4.jpg" alt="" />
+            <header>
+              <h3 class="card-header">Название</h3>
+            </header>
+            <p class="card-text">Мы работаем за еду</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p>Сайт создан в мае</p>
+      <p>Все права защищены</p>
+    </footer>
+  </body>
+</html>
